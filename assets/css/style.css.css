@@ -1,9 +1,44 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: cursive;
+    font-family: monospace;
 }
 
 body{
-    background-color: gray;
+    background-color: rgb(34, 32, 32);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    margin: 25vh 0;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    height: 5vh;
+    width: 20vw;
+    border: 1px ;
+    border-radius: 3px;
+    padding-left: 0.25rem;
+    font-size: 1rem;
+}
+
+input:focus{
+    outline: none;
+    border: 1px solid gray;
+}
+
+button{
+    height: 4vh;
+    width: 15vw;
+    margin: 0.45rem auto;
+    border: 1px ;
+    border-radius: 3px;
+    font-size: 1.25rem;
+    cursor: pointer;
 }
