@@ -1,11 +1,11 @@
-var numberSendValue = document.getElementById("send-value");
-var result = document.getElementById("result");
+let numberSendValue = document.getElementById("send-value");
+let result = document.getElementById("result");
 
 numberSendValue.addEventListener("click", ValueGenerator);
 
-function ValueGenerator(numberTransform) {
+function ValueGenerator() {
 
-    var numberTransform = document.getElementById("numberTransform").value;
+    let numberTransform = document.getElementById("numberTransform").value;
 
     const bit = (numberTransform >>> 0).toString(2);
     console.log(bit);
