@@ -11,26 +11,28 @@ body{
 main{
     display: flex;
     justify-content: center;
-    margin: 25vh 0;
+    margin: 25vh auto;
 }
 
 .content{
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
 }
 
 input{
     height: 5vh;
-    width: 20vw;
+    width: 30vw;
     border: 1px ;
     border-radius: 3px;
     padding-left: 0.25rem;
     font-size: 1rem;
+    margin: 0 auto;
 }
 
 input:focus{
     outline: none;
-    border: 1px solid gray;
+    border: 0px solid gray;
 }
 
 button{
@@ -57,4 +59,29 @@ button:hover{
     margin: 0.45rem auto;
     color: white;
     border-bottom: 1px solid gray;
+}
+
+
+@media (max-width:768px){
+    input{
+        height: 6vh;
+        width: 60vw;
+    }
+
+    button{
+        height: 5vh;
+        width: 25vw;
+    }
+}
+
+@media (max-width:425px){
+    input{
+        height: 6vh;
+        width: 80vw;
+    }
+
+    button{
+        height: 5vh;
+        width: 45vw;
+    }
 }
